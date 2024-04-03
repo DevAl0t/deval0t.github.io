@@ -1,0 +1,13 @@
+$primary: #282C35; // set the $primary variable
+$custom-secondary-color: #fbd784; // set the custom secondary color
+$text-color:#777777;
+
+// merge with existing $theme-colors map
+$theme-colors: map-merge($theme-colors, (
+  "primary": $primary,
+  "secondary": $custom-secondary-color,
+));
+
+// Override Bootstrap's font family
+$custom-font-family: 'Poppins', sans-serif;
+$font-family-base: $custom-font-family;

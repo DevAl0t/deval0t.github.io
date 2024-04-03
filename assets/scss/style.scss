@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/functions"; 
+@import "../../node_modules/bootstrap/scss/variables";
+@import './theme';
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './_global';
+@import './_buttons';
+@import './_navbar';
+@import './_hamburger-menu';
+@import './_hero-section';
+@import './_about';
+
+// Boootstrap REBOOT na purge css toevoegen

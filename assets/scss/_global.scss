@@ -1,0 +1,14 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.kroes-footer {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    color:$text-color;
+    font-size: .9rem;
+}
