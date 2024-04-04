@@ -1,4 +1,4 @@
-$navbar-height: 63px;
+$navbar-height: 62px;
 $navbar-height-mobile: 60px;
 
 .gradient-hero{
@@ -8,14 +8,9 @@ $navbar-height-mobile: 60px;
     right: 0%;
     bottom: 0%;
     width: 100%;
-    height: calc(100dvh - $navbar-height);
+    height: 100%;
     background-image: linear-gradient(135deg, #0b1d26, transparent 87%);
     opacity: 0.6;
-
-    @media only screen and (max-width: 768px) {
-        height: calc(100dvh - $navbar-height-mobile);
-    }
-
 }
 
 
@@ -32,9 +27,9 @@ $navbar-height-mobile: 60px;
     justify-content: center;
     background-size: cover;
 
-    @media only screen and (max-width: 768px) {
-        height: calc(100dvh - $navbar-height-mobile);
-    }
+    // @media only screen and (max-width: 768px) {
+    //     height: calc(100vh - $navbar-height-mobile);
+    // }
 
     .content-hero{
         width: 100%;
