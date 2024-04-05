@@ -1,39 +1,45 @@
-const navToggler = document.querySelector(".navbar-toggler");
-const hamburger = document.querySelector(".hamburger-menu");
+function kroesMobileNav(){
 
-const navLinks = document.querySelectorAll('.nav-item');
-const menuToggle = document.getElementById('navbarSupportedContent');
-const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+    if (!document.querySelector(".navbar-toggler")) {
+        return;
+    }
 
-navToggler.addEventListener("click", function(e){
+    const navToggler = document.querySelector(".navbar-toggler");
+    const hamburger = document.querySelector(".hamburger-menu");
 
-    e.stopPropagation();
-    hamburger.classList.toggle('active');
+    const navLinks = document.querySelectorAll('.nav-item');
+    const menuToggle = document.getElementById('navbarSupportedContent');
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
 
-});
-
-menuToggle.addEventListener('shown.bs.collapse', function () {
-
-    hamburger.classList.add('active');
-
-});
-
-menuToggle.addEventListener('hidden.bs.collapse', function () {
-
-    hamburger.classList.remove('active');
-
-});
-
-navLinks.forEach((navLink) => {
-    navLink.addEventListener('click', (e) => {
+    navToggler.addEventListener("click", function(e){
 
         e.stopPropagation();
+        hamburger.classList.toggle('active');
 
-        // Check if the navbar toggler is visible (indicating mobile view)
-        if (getComputedStyle(navToggler).display !== 'none') {
-            bsCollapse.toggle(); // Toggle the mobile menu
-            hamburger.classList.remove('active');
-        }
     });
-});
 
+    menuToggle.addEventListener('shown.bs.collapse', function () {
+
+        hamburger.classList.add('active');
+
+    });
+
+    menuToggle.addEventListener('hidden.bs.collapse', function () {
+
+        hamburger.classList.remove('active');
+
+    });
+
+    navLinks.forEach((navLink) => {
+        navLink.addEventListener('click', (e) => {
+
+            e.stopPropagation();
+
+            // Check if the navbar toggler is visible (indicating mobile view)
+            if (getComputedStyle(navToggler).display !== 'none') {
+                bsCollapse.toggle(); // Toggle the mobile menu
+                hamburger.classList.remove('active');
+            }
+        });
+    });
+}

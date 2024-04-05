@@ -35,8 +35,6 @@
  .guestbook-messages{
     width: 100%;
 
-    
-
     .message-content{
         padding:1rem;
         width: 100%;
@@ -45,6 +43,7 @@
         flex-direction: row;
         align-items: center;
         margin-bottom:2rem;
+        border:1px solid #efeaea;
     }
 
     .message-wrap:first-child{
@@ -84,6 +83,5 @@
             background:#f8eed6 ;
         }
     }
-
 
  }
