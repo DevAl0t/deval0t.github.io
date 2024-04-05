@@ -20,6 +20,13 @@
         line-height:1.75
     }
 
+    .kroes-inline-link{
+        border-bottom: 3px solid $custom-secondary-color;
+        &:hover{
+            color: $text-color!important;
+        }
+    }
+
     .about-bottom-text{
         width: 100%;
         display: flex;
@@ -67,7 +74,7 @@
               transform: scale(1.1);
             }
             .overlay {
-                opacity: 0.5; // Adjust the opacity as needed
+                opacity: 0.5;
               }
            
           }

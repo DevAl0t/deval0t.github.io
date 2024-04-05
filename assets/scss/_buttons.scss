@@ -10,4 +10,20 @@
         &:hover{
             background: transparent;
         }
+        
+}
+
+.btn2{
+    display: block;
+    background: transparent;
+    border: 2px solid $custom-secondary-color;
+    padding: .5rem 1.5rem;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background ease-in-out .2s;
+
+    &:hover{
+        background: $custom-secondary-color;
+    }
+    
 }
