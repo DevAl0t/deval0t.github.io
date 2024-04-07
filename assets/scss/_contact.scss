@@ -21,15 +21,16 @@ justify-content: center; /* Add 'justify-content: center' */
 }
 
 .pushed-up{
-    top: -11rem;
-    position: relative;
+    // top: -11rem;
+    // position: relative;
+    margin-top:-15%;
 
     @media only screen and (max-width: 991px) {
-        top: 2rem;
+        margin-top: 10%;
     }
 
     @media only screen and (max-width: 768px) and (orientation: landscape) {
-        top:2rem;
+        margin-top: 10%;
     }
 
 }
@@ -37,7 +38,6 @@ justify-content: center; /* Add 'justify-content: center' */
 
 .kroes-contact-form{
     width:100%;
-    // background:#fff;
     border-radius:2px;
 
     input{
