@@ -37,8 +37,30 @@
             
 }
 
+
+
+    .quote-open{
+        position: absolute;
+        top: 0;
+        left: 0%;
+        transform: translateX(0%);
+        opacity: .2;
+    }
+
+    .quote-close{
+        position: absolute;
+        bottom: 0;
+        right: 0%;
+        transform: translateX(0%) rotate(180deg);
+        opacity: .2;
+    }
+
  .guestbook-messages{
     width: 100%;
+
+    h2{
+        font-weight: 600;
+    }
 
     .message-content{
         padding:1rem;
@@ -90,3 +112,6 @@
     }
 
  }
+
+
+
