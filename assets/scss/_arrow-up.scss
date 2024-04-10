@@ -1,0 +1,24 @@
+.kroes-arrow-up{
+
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    z-index: 9999999;
+    transform: rotate(180deg);
+    background:$custom-secondary-color;
+    cursor: pointer;
+    opacity:0;
+    transition: opacity ease-in-out .3s;
+
+    @media only screen and (max-width: 992px) {
+        width: 1.5rem;
+        height: 1.5rem;
+        right: .5rem;
+    }
+}
+
+.kroes-arrow-up-show{
+    opacity:1;
+}
