@@ -1,4 +1,4 @@
-.guestbook-container {
+.kroes-guestbook-container {
 
     position: relative;
     overflow: hidden;
@@ -13,28 +13,35 @@
         padding-right: 0;
     }
 
-        .guestbook-hero-image {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: calc(100dvh - 63px);
-            object-fit: cover;
+    .guestbook-hero-image {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100dvh - 63px);
+        object-fit: cover;
 
 
-            @media only screen and (max-width: 992px) {
-                height: auto;
-                object-fit: contain;
-                        
-                }
-
+        @media only screen and (max-width: 992px) {
+            height: auto;
+            object-fit: contain;
+                    
             }
 
-            p{
-                color:$text-color;
-                text-align: center;
-            }
-            
+        }
+
+        p{
+            color:$text-color;
+            text-align: center;
+        }
+        
 }
+
+    .kroes-guestbook-messages{
+    width: 100%;
+
+    h2{
+        font-weight: 600;
+    }
 
     .quote-open{
         position: absolute;
@@ -57,9 +64,9 @@
                     
             }
  
-        }
-    
+    }
 
+    
     .quote-close{
         position: absolute;
         bottom: 0;
@@ -83,15 +90,6 @@
             
         }
 
-    }
-
-
-
-    .guestbook-messages{
-    width: 100%;
-
-    h2{
-        font-weight: 600;
     }
 
     .message-content{

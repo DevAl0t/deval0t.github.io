@@ -5,7 +5,7 @@ function kroesMobileNav(){
     }
 
     const navToggler = document.querySelector(".navbar-toggler");
-    const hamburger = document.querySelector(".hamburger-menu");
+    const hamburger = document.querySelector(".kroes-hamburger-menu");
 
     const navLinks = document.querySelectorAll('.nav-item');
     const menuToggle = document.getElementById('navbarSupportedContent');
@@ -35,9 +35,9 @@ function kroesMobileNav(){
 
             e.stopPropagation();
 
-            // Check if the navbar toggler is visible (indicating mobile view)
+         
             if (getComputedStyle(navToggler).display !== 'none') {
-                bsCollapse.toggle(); // Toggle the mobile menu
+                bsCollapse.toggle();
                 hamburger.classList.remove('active');
             }
         });

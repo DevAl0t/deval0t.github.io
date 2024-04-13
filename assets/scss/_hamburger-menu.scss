@@ -1,25 +1,29 @@
-.hamburger-menu{
+.kroes-hamburger-menu{
     display: block;
     cursor: pointer;
+    
+    .bar{
+        display:block;
+        width:25px;
+        height:2px;
+        margin:5px auto;
+        transition: all .3s ease-in-out;
+        background-color: $primary;
+    }
 }
 
-.bar{
-    display:block;
-    width:25px;
-    height:2px;
-    margin:5px auto;
-    transition: all .3s ease-in-out;
-    background-color: $primary;
-}
+.kroes-hamburger-menu.active {
 
-.hamburger-menu.active .bar:nth-child(2){
-    opacity:0;
-}
+    .bar:nth-child(2){
+        opacity:0;
+    }
 
-.hamburger-menu.active .bar:nth-child(1){
-    transform: translateY(7px) rotate(45deg);
-}
+    .bar:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
 
-.hamburger-menu.active .bar:nth-child(3){
-    transform: translateY(-7px) rotate(-45deg);
+    .bar:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
 }

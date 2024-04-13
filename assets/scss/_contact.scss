@@ -9,70 +9,67 @@ background-repeat: no-repeat;
 background-size: cover;
 display: flex;
 flex-direction: column;
-align-items: center; /* Change 'start' to 'center' */
-justify-content: center; /* Add 'justify-content: center' */
+align-items: center;
+justify-content: center;
 
-h1{
-    font-weight: 600;
-}
-
-.kroes-contact-content-hero{
-    width: 100%;
-    max-width: 790px;
-    z-index: 99;
-    position: relative;
-    
-}
-
-.pushed-up{
-    // top: -11rem;
-    // position: relative;
-    margin-top:-15%;
-
-    @media only screen and (max-width: 991px) {
-        margin-top: 10%;
+    h1{
+        font-weight: 600;
     }
 
-    @media only screen and (max-width: 768px) and (orientation: landscape) {
-        margin-top: 10%;
+    .kroes-contact-content-hero{
+        width: 100%;
+        max-width: 790px;
+        z-index: 99;
+        position: relative;
+        
     }
 
-}
+    .pushed-up{
+        margin-top:-12%;
 
-
-.kroes-contact-form{
-    width:100%;
-    border-radius:2px;
-
-    input{
-        border:none;
-    }
-
-    textarea{
-        border:none;
-    }
-}
-
-.kroes-socials{
-
-    a{
-        width: 5%;
-        display: inline-block;
-        transition: transform ease-in-out .1s;
-
-        @media only screen and (max-width: 768px) {
-            width: 7%;
+        @media only screen and (max-width: 991px) {
+            margin-top: 10%;
         }
 
         @media only screen and (max-width: 768px) and (orientation: landscape) {
-            width: 5%;
+            margin-top: 10%;
         }
 
-        &:hover{
-            transform: scale(1.2);
+    }
+
+
+    .kroes-contact-form{
+        width:100%;
+        border-radius:2px;
+
+        input{
+            border:none;
+        }
+
+        textarea{
+            border:none;
         }
     }
 
-}
+    .kroes-socials{
 
+        a{
+            width: 5%;
+            display: inline-block;
+            transition: transform ease-in-out .1s;
+
+            @media only screen and (max-width: 768px) {
+                width: 7%;
+            }
+
+            @media only screen and (max-width: 768px) and (orientation: landscape) {
+                width: 5%;
+            }
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+    }
 }

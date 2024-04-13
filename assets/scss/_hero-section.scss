@@ -1,7 +1,7 @@
 $navbar-height: 62px;
 $navbar-height-mobile: 60px;
 
-.gradient-hero{
+.kroes-gradient-hero{
     position: absolute;
     left: 0;
     top: 0;
@@ -15,7 +15,7 @@ $navbar-height-mobile: 60px;
 }
 
 
-.hero-section{
+.kroes-hero-section{
     position: relative;
     z-index: 9999;
     width: 100%;
@@ -75,84 +75,3 @@ $navbar-height-mobile: 60px;
         }
     }
 }
-
-.bird{
-    background-image: url('../../bird-cells-new.svg');
-    filter: invert(34%) sepia(55%) saturate(50%) hue-rotate(141deg) brightness(70%) contrast(91%);
-    background-size: auto 100%;
-    width: 88px;
-    height: 125px;
-    will-change: background-position;
-    animation-name: fly-cycle;
-    animation-timing-function: steps(10);
-    animation-iteration-count: infinite;
-}
-
-.bird-one{
-    animation-duration: 1s;
-    animation-delay: -0.8s;
-}
-
-.bird-container {
-	position: absolute;
-	top: 10%;
-    left: -3%;
-	transform: scale(0) translateX(-10vw);
-	will-change: transform;
-	animation-name: fly-right-one;
-	animation-timing-function: linear;
-	animation-iteration-count:1;
-}
-	
-.bird-container-one{
-	animation-duration: 15s;
-	animation-delay: 1.4s;
-    z-index: 99999;
-}
-
-
-@keyframes fly-cycle {
-	
-	100% {
-		background-position: -900px 0;
-	}
-	
-}
-
-@keyframes fly-right-one {
-	
-	0% {
-		transform: scale(0.3) translateX(-10vw);
-	}
-	
-	10% {
-		transform: translateY(2vh) translateX(10vw) scale(0.4);
-	}
-	
-	20% {
-		transform: translateY(0vh) translateX(30vw) scale(0.5);
-	}
-	
-	30% {
-		transform: translateY(4vh) translateX(50vw) scale(0.6);
-	}
-	
-	40% {
-		transform: translateY(2vh) translateX(70vw) scale(0.6);
-	}
-	
-	50% {
-		transform: translateY(0vh) translateX(90vw) scale(0.6);
-	}
-	
-	60% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
-	}
-	
-	100% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
-	}
-	
-}
-
-    
